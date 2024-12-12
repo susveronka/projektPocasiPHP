@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class Bundesland extends Model
 {
-    protected $table            = 'bundeslands';
+    protected $table            = 'spolkoveZeme';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';

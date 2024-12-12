@@ -1,15 +1,11 @@
 <?= $this->extend('layout/sablona'); ?>
 
+<?= $this->section('content'); ?>
+
+<h1>Spolkové země</h1>
+<div class="row">
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ahooooj</h1>
-</body>
-</html>
+<?= $this->endSection(); ?>
+
+

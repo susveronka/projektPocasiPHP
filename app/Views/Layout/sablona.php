@@ -6,14 +6,15 @@
     <title>Document</title>
  
     <?= $this-> include('layout/css'); ?> 
-    <?= $this-> include('layout/navbar'); ?> 
+   
 
 </head>
 <body>
+<?= $this-> include('layout/navbar'); ?> 
+<div class="container-fluid">
 
+<?= $this->renderSection('content'); ?>
 
-
-
-    
+</div>
 </body>
 </html>
