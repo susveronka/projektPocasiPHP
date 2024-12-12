@@ -1,3 +1,4 @@
+<?= $this->extend('layout/sablona'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

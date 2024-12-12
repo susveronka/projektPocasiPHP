@@ -6,12 +6,11 @@
     <title>Document</title>
  
     <?= $this-> include('layout/css'); ?> 
-
+    <?= $this-> include('layout/navbar'); ?> 
 
 </head>
 <body>
-<?= $this-> include('layout/navbar'); ?> 
-<?= $this-> renderSection('content'); ?> 
+
 
 
 

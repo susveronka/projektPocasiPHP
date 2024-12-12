@@ -21,6 +21,9 @@ class Main extends BaseController
     public function prehledStanic(){
         echo view ('prehledStanic');
     }
+    public function data(){
+        echo view ('data');
+    }
 
    
 
