@@ -54,10 +54,5 @@ class Main extends BaseController
 
  
 
-    public function zeme($id)
-    {
-
-        $data["zeme"] = $this->spolkoveZeme->find($id);
-        echo view('zeme', $data);
-    }
+   
 }
