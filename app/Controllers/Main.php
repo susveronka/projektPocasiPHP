@@ -10,21 +10,22 @@ use App\Models\Stanice;
 
 class Main extends BaseController
 {
+    
     var $spolkoveZeme;
     public function __construct()
     {
         $this->spolkoveZeme = new Bundesland(); //this -> můžu ji volat z jiné metody a je pro celou třídu
 
     }
-
-    public function index()
-    {
-        //
-    }
+    
 
     public function prehledStanic()
     {
         echo view('prehledStanic');
+
+
+
+
     }
     public function data()
     {
@@ -34,7 +35,10 @@ class Main extends BaseController
 
 
 
-
+    public function index(): string
+    {
+        return view('spolkoveZeme');
+    }
 
 
 
@@ -43,17 +47,17 @@ class Main extends BaseController
 
         $data["spolkoveZeme"] = $this->spolkoveZeme->orderBy('id', 'asc')->findAll(); //hledá v databázi id a seřadí podle velikosti id
 
-
+   
         echo view('spolkoveZeme', $data); //vypíše
 
     }
 
-
+ 
 
     public function zeme($id)
     {
 
-        $data["hrac"] = $this->spolkoveZeme->find($id);
+        $data["zeme"] = $this->spolkoveZeme->find($id);
         echo view('zeme', $data);
     }
 }

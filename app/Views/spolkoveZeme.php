@@ -4,14 +4,17 @@
 
 <h1>Spolkové země</h1>
 <div class="row">
+
 <?php
+
 $table = new \CodeIgniter\View\Table(); 
 
-$table->setHeading('Spolkové země');
+//$table->setHeading('Spolkové země');
 
 foreach($spolkoveZeme as $row){
     
-    $table->addRow($row->name);
+    $table->addRow($row->name, $row->short_name, $row->id);
+   
 
 }
 
@@ -43,7 +46,6 @@ d' => '</td>',
 echo $table->generate();
 
 ?>
-
 <?= $this->endSection(); ?>
 
 

@@ -15,16 +15,16 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Spolkové země
+          <a class="nav-link active" href="spolkoveZeme.php">Spolkové země
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
        
         <li class="nav-item">
-          <a class="nav-link" href="#">Stanice</a>
+          <a class="nav-link" href="prehledStanic.php">Stanice</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
+          <a class="nav-link" href="data.php">Data</a>
         </li>
         
       </ul>

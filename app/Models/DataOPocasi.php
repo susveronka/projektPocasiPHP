@@ -6,10 +6,10 @@ use CodeIgniter\Model;
 
 class DataOPocasi extends Model
 {
-    protected $table            = 'dataopocasis';
+    protected $table            = 'data';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [];

@@ -6,10 +6,10 @@ use CodeIgniter\Model;
 
 class Stanice extends Model
 {
-    protected $table            = 'stanices';
+    protected $table            = 'stanice';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [];
